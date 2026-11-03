@@ -6,7 +6,7 @@ It runs on Linux, macOS and Windows with **Node.js 18.17 or newer**. It needs no
 
 ## For humans: how to use this
 
-**To make speech in your browser, with nothing to install, go to https://pipertts.com**
+**To make speech in your browser, go to https://pipertts.com**
 
 This repository is for making speech in code or with an AI agent. The easiest way is to ask an AI agent that can run commands on a computer with internet access, such as Claude Code, Cursor or Codex. Give it the link to this page and say what you want. For example:
 
