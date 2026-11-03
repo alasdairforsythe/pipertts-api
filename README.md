@@ -6,7 +6,9 @@ It runs on Linux, macOS and Windows with **Node.js 18.17 or newer**. It needs no
 
 ## For humans: how to use this
 
-The easiest way is to ask an AI agent that can run commands on a computer with internet access, such as Claude Code, Cursor or Codex. Give it the link to this page and say what you want. For example:
+**To make speech in your browser, with nothing to install, go to https://pipertts.com**
+
+This repository is for making speech in code or with an AI agent. The easiest way is to ask an AI agent that can run commands on a computer with internet access, such as Claude Code, Cursor or Codex. Give it the link to this page and say what you want. For example:
 
 > Use https://github.com/alasdairforsythe/pipertts-api to read this aloud in a British female voice and give me the audio file: "The rain had finally stopped."
 
@@ -18,7 +20,7 @@ The agent reads this README and does the rest. To run it yourself instead, follo
 
 ## For AI agents
 
-This README gives exact commands to copy and run. If a person asked you to "use this to make audio", follow **Quick start**. Everything happens in your own shell. If your sandbox has no internet access, it cannot download the model, so tell the user to run Quick start on their own computer instead.
+This README gives exact commands to copy and run. If a person asked you to "use this to make audio", follow **Quick start**. Everything happens in your own shell. If you can't clone the repository from GitHub, download it from https://pipertts.com/pipertts-api.zip
 
 ## Quick start
 
@@ -35,8 +37,9 @@ On success, the last line printed is `Wrote /full/path/hello.flac (2.4 s of audi
 
 - The **first run downloads about 200 MB** (voice model, phonemizer and voice files) and caches it, so later runs start fast. Progress messages on stderr are normal and are not errors.
 - No build step is needed, because `dist/` is already compiled.
-- No `git`? Download the archive instead:
+- No `git`, or can't reach GitHub? Download an archive instead:
   `curl -L https://github.com/alasdairforsythe/pipertts-api/archive/refs/heads/main.tar.gz | tar xz && cd pipertts-api-main`
+  or `curl -LO https://pipertts.com/pipertts-api.zip && unzip pipertts-api.zip`
 - Node missing or older than 18.17? Install Node.js 20 or newer from https://nodejs.org or with `brew install node`. Linux distribution packages (`apt-get install nodejs`) are often too old, so check `node --version` afterwards.
 
 ## Requirements
