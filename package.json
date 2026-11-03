@@ -1,0 +1,24 @@
+{
+  "name": "pipertts",
+  "version": "0.1.0",
+  "description": "PiperTTS on the command line, over HTTP and from Node: text in, FLAC out. Runs on any platform with Node.js 18.17+, no native dependencies.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": { "pipertts": "dist/cli.js" },
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=18.17" },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "libflacjs": "5.6.0",
+    "onnxruntime-web": "1.31.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.43",
+    "typescript": "5.9.3"
+  },
+  "license": "SEE LICENSE IN LICENSE"
+}
